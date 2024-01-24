@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import Header from './components/header/Header';
+import HorizontalScroller from './components/horizontal_scroller/HorizontalScroller';
+import VerticalSpacer from './components/spacer/VerticalSpacer';
+import Actions from './components/actions/Actions';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Header name="John Doe" />
+      <VerticalSpacer amount={20} />
+      <HorizontalScroller />
+      <VerticalSpacer amount={20} />
+      <Actions />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 60,
+    paddingHorizontal: 5,
   },
 });
