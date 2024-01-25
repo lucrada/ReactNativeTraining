@@ -22,7 +22,7 @@ export default styles = StyleSheet.create({
         justifyContent: "center",
     },
     info_welcome: {
-        fontColor: "#eee",
+        color: "#888",
         fontSize: 10,
     },
     info_name: {
